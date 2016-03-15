@@ -12,7 +12,7 @@ function valleyDir=valleyFinder(secArr, threshold, robotW)
 
 %determine the amount of consecutive sectors that must be clear in order
 %for robot to safely navigate between obstacles.
-clearanceAngle=radtodeg(2*(asin(robotW/(2*threshold)))); %degrees
+clearanceAngle=180*(2*(asin(robotW/(2*threshold))))/pi; %degrees
 sectToClear=floor(clearanceAngle/3);
 
 
